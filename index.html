@@ -1,0 +1,1567 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bolos Caseiros Lucrativos – Fature R$1.000+/mês na Sua Cozinha</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,700;0,9..144,900;1,9..144,400;1,9..144,700&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --brown:    #7C3A1E;
+  --brown-md: #A0501E;
+  --brown-lt: #FDF4ED;
+  --caramel:  #C8763A;
+  --caramel-lt: #FEF0E0;
+  --cream:    #FDFAF6;
+  --vanilla:  #F5EDD8;
+  --choc:     #3D1A0A;
+  --text:     #2C1810;
+  --muted:    #8A6A50;
+  --green:    #2D6A04;
+  --green-lt: #EAF3DE;
+  --white:    #FFFFFF;
+  --r:        14px;
+  --r-lg:     22px;
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Nunito', sans-serif;
+  background: var(--cream);
+  color: var(--text);
+  overflow-x: hidden;
+  line-height: 1.65;
+}
+
+/* ─── TOPBAR ─────────────────────────────── */
+.topbar {
+  background: var(--brown);
+  color: rgba(255,255,255,.9);
+  text-align: center;
+  padding: 10px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: .03em;
+  position: sticky; top: 0; z-index: 300;
+}
+.topbar em { font-style: normal; color: #FFD898; }
+
+/* ─── HERO ──────────────────────────────── */
+.hero {
+  background: var(--choc);
+  position: relative; overflow: hidden;
+  padding: 68px 24px 80px;
+  text-align: center;
+}
+.hero-bg-circles {
+  position: absolute; inset: 0; pointer-events: none;
+}
+.hero-bg-circles span {
+  position: absolute; border-radius: 50%;
+  border: 1px solid rgba(200,118,58,.12);
+}
+.hero-bg-circles span:nth-child(1) { width:600px;height:600px;top:-200px;left:-200px; }
+.hero-bg-circles span:nth-child(2) { width:400px;height:400px;bottom:-100px;right:-100px; }
+.hero-bg-circles span:nth-child(3) { width:300px;height:300px;top:50%;right:10%;transform:translateY(-50%); }
+.hero::before {
+  content:'';
+  position:absolute; inset:0;
+  background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(200,118,58,.18) 0%, transparent 65%);
+  pointer-events:none;
+}
+.hero-inner { position:relative; z-index:1; max-width:860px; margin:0 auto; }
+
+.hero-pill {
+  display: inline-flex; align-items: center; gap: 7px;
+  background: rgba(200,118,58,.18);
+  border: 1px solid rgba(200,118,58,.35);
+  color: #FFD898;
+  font-size: 11.5px; font-weight: 700;
+  letter-spacing: .1em; text-transform: uppercase;
+  padding: 6px 16px; border-radius: 100px;
+  margin-bottom: 26px;
+  animation: fadeUp .6s ease both;
+}
+.hero h1 {
+  font-family: 'Fraunces', serif;
+  font-size: clamp(2.3rem, 6.5vw, 4rem);
+  font-weight: 900;
+  color: #fff;
+  line-height: 1.1;
+  margin-bottom: 14px;
+  animation: fadeUp .6s .1s ease both;
+}
+.hero h1 em { font-style: italic; color: var(--caramel); }
+.hero-sub {
+  font-size: clamp(.95rem, 2vw, 1.1rem);
+  color: rgba(255,255,255,.62);
+  max-width: 580px; margin: 0 auto 18px;
+  animation: fadeUp .6s .2s ease both;
+}
+.hero-count {
+  display: inline-flex; align-items: center; gap: 7px;
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.1);
+  color: rgba(255,255,255,.7); font-size: 12.5px;
+  padding: 6px 16px; border-radius: 100px;
+  margin-bottom: 38px;
+  animation: fadeUp .6s .25s ease both;
+}
+.hero-count strong { color: #FFD898; }
+.hero-badges {
+  display: flex; flex-wrap: wrap; gap: 9px;
+  justify-content: center; margin-bottom: 42px;
+  animation: fadeUp .6s .3s ease both;
+}
+.hbadge {
+  background: rgba(255,255,255,.07);
+  border: 1px solid rgba(255,255,255,.13);
+  color: rgba(255,255,255,.82);
+  font-size: 12.5px; padding: 7px 15px; border-radius: 100px;
+}
+
+/* ─── VIDEO ──────────────────────────────── */
+.video-outer {
+  max-width: 740px; margin: 0 auto 50px;
+  animation: fadeUp .6s .35s ease both;
+}
+.video-frame {
+  border-radius: 20px; overflow: hidden;
+  border: 2px solid rgba(200,118,58,.4);
+  box-shadow: 0 0 90px rgba(200,118,58,.25), 0 40px 80px rgba(0,0,0,.5);
+  aspect-ratio: 16/9; position: relative;
+  background: #1a0a00;
+}
+.video-frame iframe {
+  position: absolute; inset: 0; width: 100%; height: 100%;
+}
+
+/* ─── CTA BUTTON ─────────────────────────── */
+.btn {
+  display: inline-block;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700; font-size: 1rem;
+  padding: 17px 38px; border-radius: 100px;
+  text-decoration: none; cursor: pointer;
+  border: none; letter-spacing: .02em;
+  transition: transform .15s, box-shadow .15s;
+  position: relative; overflow: hidden;
+}
+.btn::after {
+  content:'';
+  position:absolute; top:0; left:-100%; width:50%; height:100%;
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,.2),transparent);
+  animation:shimmer 3s infinite;
+}
+@keyframes shimmer { to { left:200%; } }
+.btn-caramel {
+  background: linear-gradient(135deg, var(--caramel) 0%, var(--brown-md) 100%);
+  color: #fff;
+  box-shadow: 0 8px 32px rgba(200,118,58,.45);
+}
+.btn-caramel:hover { transform:translateY(-2px); box-shadow:0 14px 44px rgba(200,118,58,.55); }
+.btn-caramel:active { transform:translateY(0); }
+.btn-brown {
+  background: linear-gradient(135deg, var(--brown) 0%, var(--choc) 100%);
+  color: #fff;
+  box-shadow: 0 8px 28px rgba(61,26,10,.4);
+}
+.btn-brown:hover { transform:translateY(-2px); }
+.btn.lg { font-size: 1.15rem; padding: 20px 54px; }
+.btn.full { display:block; text-align:center; width:100%; }
+
+.trust-row {
+  display: flex; align-items: center; justify-content: center;
+  gap: 18px; flex-wrap: wrap; margin-top: 14px;
+}
+.trust-row span { font-size: 12px; color: rgba(255,255,255,.4); display:flex; align-items:center; gap:4px; }
+
+/* ─── LAYOUT HELPERS ────────────────────── */
+.container { max-width: 940px; margin: 0 auto; padding: 0 20px; }
+.section { padding: 80px 20px; }
+.s-white  { background: var(--white); }
+.s-cream  { background: var(--cream); }
+.s-vanilla{ background: var(--vanilla); }
+.s-brown  { background: var(--brown); }
+.s-choc   { background: var(--choc); }
+.s-caramel-lt { background: var(--caramel-lt); }
+
+.sec-header { text-align:center; margin-bottom:52px; }
+.sec-tag {
+  display: inline-block;
+  font-size: 10.5px; font-weight: 700;
+  letter-spacing: .14em; text-transform: uppercase;
+  color: var(--caramel); margin-bottom: 12px;
+}
+.sec-tag::before,.sec-tag::after { content:' 🍰 '; font-size:10px; }
+.sec-header h2 {
+  font-family: 'Fraunces', serif;
+  font-size: clamp(1.8rem, 4.5vw, 2.9rem);
+  font-weight: 900; line-height: 1.15;
+  color: var(--text);
+}
+.s-choc .sec-header h2, .s-brown .sec-header h2 { color: #fff; }
+.sec-header p {
+  color: var(--muted); font-size: 1rem;
+  max-width: 530px; margin: 12px auto 0;
+}
+.s-choc .sec-header p, .s-brown .sec-header p { color: rgba(255,255,255,.55); }
+
+/* ─── DOR / GANHO ─────────────────────────── */
+.pain-wrap {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 28px; max-width: 860px; margin: 0 auto;
+}
+.pain-col-lbl {
+  font-size: 11px; font-weight: 700;
+  letter-spacing: .1em; text-transform: uppercase;
+  margin-bottom: 18px;
+}
+.pain-col-lbl.bad { color: #A32D2D; }
+.pain-col-lbl.ok  { color: var(--green); }
+.pain-rows { display:flex; flex-direction:column; gap:10px; }
+.pain-rows li {
+  display:flex; align-items:flex-start; gap:11px;
+  font-size: 14px; color: var(--text); line-height: 1.5;
+  list-style: none;
+}
+.pi {
+  width:24px; height:24px; border-radius:50%;
+  display:flex; align-items:center; justify-content:center;
+  font-size:11px; flex-shrink:0; margin-top:1px;
+}
+.pi.bad { background:#FCEBEB; color:#A32D2D; }
+.pi.ok  { background:var(--green-lt); color:var(--green); }
+
+/* ─── BOLO GALLERY ────────────────────────── */
+.bolo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px; max-width: 880px; margin: 0 auto;
+}
+.bolo-card {
+  border-radius: var(--r-lg); overflow: hidden;
+  aspect-ratio: 4/3; position: relative;
+  display: flex; align-items: flex-end;
+  background: #3D1A0A;
+  cursor: default;
+  transition: transform .25s, box-shadow .25s;
+}
+.bolo-card:hover { transform:scale(1.03); box-shadow:0 16px 48px rgba(61,26,10,.25); }
+.bolo-card .bg {
+  position:absolute; inset:0;
+  display:flex; align-items:center; justify-content:center;
+  font-size: 3.8rem;
+}
+.bg1 { background: linear-gradient(160deg,#D4956A,#A05530,#7C3A1E); }
+.bg2 { background: linear-gradient(160deg,#F5E6C8,#E8C880,#C8963A); }
+.bg3 { background: linear-gradient(160deg,#F0C8D0,#D88090,#B05060); }
+.bg4 { background: linear-gradient(160deg,#D8EAC8,#A8C878,#688040); }
+.bg5 { background: linear-gradient(160deg,#2A1000,#6B3010,#A05030); }
+.bg6 { background: linear-gradient(160deg,#F8E8D8,#E8C8A0,#C89860); }
+.bolo-card .card-lbl {
+  position:relative; z-index:2; width:100%;
+  background: linear-gradient(transparent, rgba(0,0,0,.65));
+  color:#fff; font-size:12px; font-weight:700;
+  padding:28px 12px 12px; text-align:center;
+}
+
+/* ─── RECEITAS ────────────────────────────── */
+.receitas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 14px; max-width: 900px; margin: 0 auto;
+}
+.receita-card {
+  background: var(--white);
+  border: 1px solid rgba(200,118,58,.15);
+  border-radius: var(--r-lg); padding: 20px;
+  display: flex; gap: 15px; align-items: flex-start;
+  transition: box-shadow .2s, transform .2s;
+}
+.receita-card:hover {
+  box-shadow: 0 8px 30px rgba(200,118,58,.12);
+  transform: translateY(-2px);
+}
+.rec-icon {
+  width:44px; height:44px; border-radius:12px;
+  background:var(--caramel-lt);
+  display:flex; align-items:center; justify-content:center;
+  font-size:1.4rem; flex-shrink:0;
+}
+.rec-body h4 { font-size:14px; font-weight:700; color:var(--text); margin-bottom:4px; }
+.rec-body ul { list-style:none; display:flex; flex-direction:column; gap:3px; }
+.rec-body ul li { font-size:12px; color:var(--muted); line-height:1.4; }
+.rec-body ul li::before { content:'· '; color:var(--caramel); font-weight:700; }
+
+/* ─── ROI CALCULATOR ─────────────────────── */
+.roi-section {
+  background: linear-gradient(160deg, var(--brown) 0%, var(--choc) 100%);
+  padding: 80px 20px; color:#fff; text-align:center;
+}
+.roi-cards {
+  display: flex; gap: 0;
+  max-width: 780px; margin: 0 auto 36px;
+  align-items: center; flex-wrap: wrap; justify-content: center;
+}
+.roi-card {
+  background: rgba(255,255,255,.08);
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: var(--r-lg); padding: 22px 24px;
+  text-align: center; flex: 1; min-width: 130px;
+}
+.roi-num {
+  font-family: 'Fraunces', serif;
+  font-size: 2.2rem; font-weight: 900;
+  color: var(--caramel); line-height: 1; margin-bottom: 6px;
+}
+.roi-lbl { font-size: 12px; color: rgba(255,255,255,.55); line-height:1.4; }
+.roi-arrow { font-size:1.6rem; color:rgba(255,255,255,.25); padding:0 6px; }
+
+.scenarios {
+  display: grid; grid-template-columns: repeat(3,1fr);
+  gap: 12px; max-width: 780px; margin: 0 auto 36px;
+}
+.scenario {
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.1);
+  border-radius: var(--r); padding: 18px 14px; text-align:center;
+}
+.sc-label { font-size: 10.5px; font-weight:700; text-transform:uppercase; letter-spacing:.08em; margin-bottom:8px; }
+.sc-label.c1 { color: rgba(255,255,255,.5); }
+.sc-label.c2 { color: #FFD898; }
+.sc-label.c3 { color: var(--caramel); }
+.sc-bolos { font-size:13px; color:rgba(255,255,255,.6); margin-bottom:4px; }
+.sc-value {
+  font-family:'Fraunces',serif;
+  font-size:1.9rem; font-weight:900; color:#fff; line-height:1;
+}
+.sc-period { font-size:11px; color:rgba(255,255,255,.45); margin-top:3px; }
+
+.roi-badge {
+  display: inline-block;
+  background: rgba(200,118,58,.25);
+  border: 1px solid rgba(200,118,58,.4);
+  color: #FFD898; font-size:14px; font-weight:700;
+  padding:12px 24px; border-radius:100px; margin-bottom:32px;
+}
+
+/* ─── COMPARATIVO PREÇO ─────────────────── */
+.compare-section { padding: 80px 20px; background: var(--vanilla); }
+.compare-table {
+  max-width: 700px; margin: 0 auto 36px;
+  background: var(--white);
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  box-shadow: 0 4px 24px rgba(61,26,10,.08);
+}
+.compare-row {
+  display: flex; align-items: center;
+  padding: 16px 24px; gap: 16px;
+  border-bottom: 1px solid rgba(61,26,10,.07);
+  transition: background .15s;
+}
+.compare-row:last-child { border-bottom:none; }
+.compare-row.highlight {
+  background: linear-gradient(90deg, var(--caramel-lt), #fff);
+  border-left: 4px solid var(--caramel);
+}
+.compare-row .cr-name { flex:1; font-size:14px; color:var(--text); font-weight:500; }
+.compare-row .cr-price {
+  font-family:'Fraunces',serif;
+  font-size:1.3rem; font-weight:900;
+}
+.compare-row.highlight .cr-price { color: var(--caramel); }
+.compare-row:not(.highlight) .cr-price { color: var(--muted); text-decoration: line-through; }
+.compare-row .cr-badge {
+  font-size:10px; font-weight:700; padding:3px 9px;
+  border-radius:100px; background:var(--caramel-lt); color:var(--brown);
+}
+
+.analogies {
+  display: flex; gap: 12px; flex-wrap: wrap;
+  justify-content: center; max-width: 680px; margin: 0 auto 36px;
+}
+.analogy {
+  background: var(--white);
+  border: 1px solid rgba(200,118,58,.18);
+  border-radius: var(--r); padding: 14px 18px; text-align:center;
+  flex: 1; min-width: 140px;
+}
+.analogy .a-icon { font-size:1.5rem; margin-bottom:6px; display:block; }
+.analogy .a-name { font-size:12px; color:var(--muted); margin-bottom:4px; }
+.analogy .a-price {
+  font-family:'Fraunces',serif;
+  font-size:1.1rem; font-weight:900; color:var(--brown);
+}
+.analogy .a-vs { font-size:10px; color:var(--muted); margin-top:3px; }
+
+/* ─── DEPOIMENTOS ────────────────────────── */
+.test-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(265px, 1fr));
+  gap: 16px; max-width: 920px; margin: 0 auto;
+}
+.test-card {
+  background: var(--white);
+  border-radius: var(--r-lg); padding: 24px;
+  border: 1px solid rgba(61,26,10,.07);
+  position: relative;
+}
+.test-card::before {
+  content:'\201C';
+  font-family:'Fraunces',serif;
+  font-size:5rem; color:var(--caramel);
+  opacity:.15; position:absolute;
+  top:4px; left:14px; line-height:1;
+}
+.stars { color:#C8763A; font-size:13px; margin-bottom:12px; letter-spacing:2px; }
+.test-text { font-size:13.5px; color:var(--text); line-height:1.65; margin-bottom:16px; padding-top:6px; }
+.test-author {
+  display:flex; align-items:center; gap:11px;
+  border-top:1px solid rgba(61,26,10,.07); padding-top:14px;
+}
+.test-author img {
+  width:42px; height:42px; border-radius:50%;
+  object-fit:cover; flex-shrink:0;
+  border:2px solid var(--caramel-lt);
+}
+.test-author .fallback {
+  width:42px; height:42px; border-radius:50%;
+  display:none; align-items:center; justify-content:center;
+  font-weight:700; font-size:16px; color:#fff; flex-shrink:0;
+}
+.test-info .tname { font-size:13px; font-weight:700; color:var(--text); }
+.test-info .tloc  { font-size:11px; color:var(--muted); }
+.result-tag {
+  margin-left:auto; flex-shrink:0;
+  background:var(--green-lt); color:var(--green);
+  font-size:11px; font-weight:700;
+  padding:4px 10px; border-radius:100px; white-space:nowrap;
+}
+
+/* ─── BONUS ──────────────────────────────── */
+.bonus-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 14px; max-width: 920px; margin: 0 auto 28px;
+}
+.bonus-card {
+  background: var(--cream);
+  border-radius: var(--r-lg); padding: 22px 18px; text-align:center;
+  border: 1px solid rgba(200,118,58,.18);
+  position: relative; overflow: hidden;
+  transition: transform .2s, box-shadow .2s;
+}
+.bonus-card:hover { transform:translateY(-3px); box-shadow:0 10px 32px rgba(200,118,58,.14); }
+.bonus-card::after {
+  content:'';
+  position:absolute; top:0; left:0; right:0;
+  height:3px;
+  background:linear-gradient(90deg,var(--caramel),var(--brown));
+}
+.bonus-icon {
+  width:56px; height:66px;
+  background:linear-gradient(135deg,var(--caramel),var(--brown));
+  border-radius:8px; margin:0 auto 14px;
+  display:flex; align-items:center; justify-content:center;
+  font-size:1.5rem;
+  box-shadow:4px 4px 0 rgba(200,118,58,.25);
+}
+.bonus-card h4 { font-size:13.5px; font-weight:700; color:var(--text); margin-bottom:6px; }
+.bonus-card p  { font-size:12px; color:var(--muted); line-height:1.5; margin-bottom:10px; }
+.bonus-val  { font-size:11px; color:var(--muted); text-decoration:line-through; }
+.bonus-free { font-size:12.5px; font-weight:700; color:var(--green); }
+
+/* ─── OFERTA / PREÇO ─────────────────────── */
+.offer-section {
+  background: linear-gradient(160deg,var(--choc) 0%,#2A1000 100%);
+  padding: 80px 20px;
+}
+.offer-box {
+  background: rgba(255,255,255,.04);
+  border: 1px solid rgba(255,255,255,.1);
+  border-radius: 28px; padding: 50px 40px;
+  max-width: 600px; margin: 0 auto;
+  text-align: center; position: relative; overflow: hidden;
+}
+.offer-box::before {
+  content:'';
+  position:absolute; top:0; left:0; right:0; height:4px;
+  background:linear-gradient(90deg,var(--caramel),var(--brown),var(--caramel));
+}
+.offer-pill {
+  display:inline-block;
+  background:rgba(200,118,58,.2);
+  border:1px solid rgba(200,118,58,.4);
+  color:#FFD898; font-size:11px; font-weight:700;
+  letter-spacing:.1em; text-transform:uppercase;
+  padding:5px 14px; border-radius:100px; margin-bottom:22px;
+}
+.offer-box h2 {
+  font-family:'Fraunces',serif;
+  font-size:1.9rem; font-weight:900; color:#fff; margin-bottom:6px;
+}
+.offer-box .osub { color:rgba(255,255,255,.5); font-size:13.5px; margin-bottom:28px; }
+
+.timer-row {
+  background:rgba(255,255,255,.05);
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:var(--r); padding:14px 18px;
+  display:flex; align-items:center; gap:12px;
+  justify-content:center; flex-wrap:wrap; margin-bottom:28px;
+}
+.timer-lbl { font-size:12px; color:rgba(255,255,255,.5); }
+.tdigits { display:flex; gap:5px; align-items:center; }
+.t-u {
+  background:var(--brown);
+  border-radius:8px; padding:8px 12px;
+  text-align:center; min-width:52px;
+}
+.t-n {
+  font-family:'Fraunces',serif;
+  font-size:1.8rem; font-weight:900; color:#fff;
+  line-height:1; display:block;
+}
+.t-l { font-size:9px; color:rgba(255,255,255,.45); letter-spacing:.07em; text-transform:uppercase; display:block; margin-top:1px; }
+.t-sep { font-size:1.4rem; color:var(--caramel); font-weight:900; }
+
+.price-from { font-size:.95rem; color:rgba(255,255,255,.3); text-decoration:line-through; margin-bottom:4px; }
+.price-now {
+  font-family:'Fraunces',serif;
+  font-size:4.2rem; font-weight:900; color:var(--caramel);
+  line-height:1; margin-bottom:6px;
+}
+.price-now sup { font-size:2rem; vertical-align:super; margin-right:3px; }
+.price-note { font-size:12px; color:rgba(255,255,255,.38); margin-bottom:28px; }
+
+.offer-list {
+  list-style:none; text-align:left;
+  margin-bottom:30px; display:flex; flex-direction:column; gap:9px;
+}
+.offer-list li {
+  display:flex; align-items:center; gap:10px;
+  font-size:13.5px; color:rgba(255,255,255,.82);
+}
+.chk {
+  width:20px; height:20px; border-radius:50%;
+  background:var(--caramel); display:flex;
+  align-items:center; justify-content:center;
+  font-size:10px; flex-shrink:0; color:#fff;
+}
+.guar-row {
+  display:flex; align-items:center; gap:14px;
+  background:rgba(255,255,255,.04);
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:var(--r); padding:18px 20px;
+  margin-top:20px; text-align:left;
+}
+.guar-icon { font-size:2.4rem; flex-shrink:0; }
+.guar-text h4 { font-size:13.5px; font-weight:700; color:#fff; margin-bottom:4px; }
+.guar-text p  { font-size:12px; color:rgba(255,255,255,.5); line-height:1.5; }
+
+/* ─── FAQ ────────────────────────────────── */
+.faq-list { max-width:740px; margin:0 auto; display:flex; flex-direction:column; gap:2px; }
+.faq-item { border:1px solid rgba(200,118,58,.18); border-radius:var(--r); overflow:hidden; }
+.faq-q {
+  width:100%; background:none; border:none;
+  padding:17px 20px; text-align:left;
+  font-family:'Nunito',sans-serif;
+  font-size:14px; font-weight:600; color:var(--text);
+  cursor:pointer; display:flex; justify-content:space-between;
+  align-items:center; gap:12px; transition:background .15s;
+}
+.faq-q:hover { background:var(--caramel-lt); }
+.faq-q .arr {
+  width:22px; height:22px; border-radius:50%;
+  background:var(--caramel-lt); color:var(--caramel);
+  display:flex; align-items:center; justify-content:center;
+  font-size:12px; flex-shrink:0; transition:transform .25s;
+}
+.faq-item.open .faq-q { background:var(--caramel-lt); }
+.faq-item.open .faq-q .arr { transform:rotate(180deg); background:var(--caramel); color:#fff; }
+.faq-a {
+  font-size:13.5px; color:var(--muted); line-height:1.7;
+  padding:0 20px; max-height:0; overflow:hidden;
+  transition:max-height .3s ease,padding .3s ease;
+  background:var(--caramel-lt);
+}
+.faq-item.open .faq-a { max-height:300px; padding:0 20px 18px; }
+
+/* ─── FINAL ──────────────────────────────── */
+.final-sec {
+  padding:88px 20px;
+  background:var(--brown);
+  text-align:center; position:relative; overflow:hidden;
+}
+.final-sec::before {
+  content:'';
+  position:absolute; inset:0;
+  background:radial-gradient(ellipse 65% 55% at 50% 50%,rgba(255,200,100,.08) 0%,transparent 65%);
+  pointer-events:none;
+}
+.final-sec h2 {
+  font-family:'Fraunces',serif;
+  font-size:clamp(2rem,5.5vw,3.2rem);
+  font-weight:900; color:#fff; margin-bottom:14px;
+  position:relative;
+}
+.final-sec h2 em { font-style:italic; color:#FFD898; }
+.final-sec p { color:rgba(255,255,255,.55); margin-bottom:36px; font-size:1rem; max-width:530px; margin-left:auto; margin-right:auto; position:relative; }
+
+/* ─── FOOTER ─────────────────────────────── */
+footer {
+  background:var(--choc);
+  color:rgba(255,255,255,.3);
+  text-align:center; padding:28px 20px;
+  font-size:12px; line-height:1.9;
+}
+
+/* ─── STICKY MOBILE ──────────────────────── */
+.sticky-bar {
+  display:none;
+  position:fixed; bottom:0; left:0; right:0;
+  background:var(--white);
+  padding:12px 16px;
+  border-top:1px solid rgba(200,118,58,.2);
+  z-index:300;
+  box-shadow:0 -8px 32px rgba(61,26,10,.12);
+}
+.sticky-bar .btn { display:block; width:100%; max-width:420px; margin:0 auto; }
+
+/* ─── ANIMATIONS ─────────────────────────── */
+@keyframes fadeUp {
+  from { opacity:0; transform:translateY(18px); }
+  to   { opacity:1; transform:translateY(0); }
+}
+.reveal {
+  opacity:0; transform:translateY(24px);
+  transition:opacity .65s ease, transform .65s ease;
+}
+.reveal.visible { opacity:1; transform:translateY(0); }
+
+/* ─── RESPONSIVE ─────────────────────────── */
+/* ─── MÓDULOS BLOCOS ─────────────────────── */
+.modulo-bloco {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  margin-bottom: 56px;
+  padding-bottom: 56px;
+  border-bottom: 1px solid rgba(200,118,58,.12);
+}
+.modulo-bloco:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+.modulo-reverse { direction: rtl; }
+.modulo-reverse > * { direction: ltr; }
+.modulo-img {
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  aspect-ratio: 4/3;
+  position: relative;
+  box-shadow: 0 12px 36px rgba(61,26,10,.18);
+}
+.modulo-img img { width:100%; height:100%; object-fit:cover; display:block; }
+.mod-num-badge {
+  position: absolute;
+  top: 12px; left: 12px;
+  background: var(--caramel);
+  color: #fff;
+  font-size: 11px; font-weight: 700;
+  letter-spacing: .08em; text-transform: uppercase;
+  padding: 5px 12px; border-radius: 100px;
+}
+.modulo-content { display: flex; flex-direction: column; gap: 10px; }
+.mod-eyebrow {
+  font-size: 11px; font-weight: 700;
+  letter-spacing: .1em; text-transform: uppercase;
+  color: var(--caramel);
+}
+.modulo-content h3 {
+  font-family: 'Fraunces', serif;
+  font-size: clamp(1.25rem, 2.5vw, 1.7rem);
+  font-weight: 900; color: var(--text); line-height: 1.15;
+}
+.modulo-content p { font-size: 13.5px; color: var(--muted); line-height: 1.65; }
+.modulo-content strong { color: var(--brown); }
+.mod-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.mod-list li {
+  font-size: 13px; color: var(--text); line-height: 1.4;
+  display: flex; gap: 9px; align-items: flex-start;
+}
+.mod-list li::before {
+  content: '✓';
+  width: 17px; height: 17px; border-radius: 50%;
+  background: var(--caramel-lt); color: var(--caramel);
+  font-size: 9px; font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0; margin-top: 1px;
+}
+.receitas-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+.rtag {
+  background: var(--caramel-lt);
+  border: 1px solid rgba(200,118,58,.25);
+  color: var(--brown);
+  font-size: 12px; font-weight: 600;
+  padding: 5px 11px; border-radius: 100px;
+}
+.mod-note {
+  font-size: 12px !important;
+  color: var(--muted) !important;
+  font-style: italic;
+  background: var(--vanilla);
+  border-left: 3px solid var(--caramel);
+  padding: 7px 11px; border-radius: 0 8px 8px 0;
+  margin-top: 2px;
+}
+
+/* ═══════════════════════════════════════════
+   MOBILE FIRST — Otimização profunda
+   Base: design para 375px, escala para cima
+═══════════════════════════════════════════ */
+
+/* ── Ajustes base para todos os tamanhos ── */
+img { max-width: 100%; height: auto; }
+.section { padding: 56px 20px; }
+.container { padding: 0 20px; max-width: 940px; margin: 0 auto; }
+
+/* ── Smartphone padrão (até 640px) ── */
+@media (max-width: 640px) {
+
+  /* Geral */
+  .section { padding: 40px 14px; }
+  .container { padding: 0 14px; }
+  .sec-header { margin-bottom: 24px; }
+  .sec-header h2 { font-size: 1.45rem; line-height: 1.2; }
+  .sec-header p { font-size: 13.5px; margin-top: 8px; }
+  .sec-tag { font-size: 10px; }
+
+  /* Topbar */
+  .topbar { font-size: 11.5px; padding: 9px 12px; }
+
+  /* Hero — compacto e impactante */
+  .hero { padding: 40px 14px 48px; }
+  .hero-pill { font-size: 10.5px; padding: 5px 13px; margin-bottom: 18px; }
+  .hero h1 { font-size: 1.85rem; line-height: 1.1; margin-bottom: 10px; }
+  .hero-sub { font-size: 14px; margin-bottom: 12px; }
+  .hero-count { font-size: 11.5px; padding: 5px 12px; margin-bottom: 20px; }
+  .hero-badges { gap: 6px; margin-bottom: 24px; }
+  .hbadge { font-size: 11px; padding: 5px 11px; }
+  .video-outer { margin-bottom: 24px; }
+  .video-frame { border-radius: 12px; border-width: 1.5px; }
+  .btn.lg { font-size: .95rem; padding: 15px 26px; width: 100%; text-align: center; display: block; }
+  .trust-row { gap: 8px; margin-top: 10px; }
+  .trust-row span { font-size: 10.5px; gap: 3px; }
+
+  /* Antes/Depois */
+  .pain-wrap { grid-template-columns: 1fr; gap: 18px; }
+  .pain-col-lbl { font-size: 10.5px; margin-bottom: 10px; }
+  .pain-rows li { font-size: 13px; gap: 9px; }
+  .pi { width: 20px; height: 20px; font-size: 10px; }
+
+  /* Galeria bolos — 2 colunas compactas */
+  .bolo-grid { grid-template-columns: 1fr 1fr; gap: 7px; }
+  .bolo-card { aspect-ratio: 1/1; border-radius: 10px; }
+  .bolo-card .bg { font-size: 2.5rem; }
+  .card-lbl { font-size: 10.5px; padding: 18px 6px 8px; font-weight: 600; }
+
+  /* Módulos — mobile otimizado */
+  .modulo-bloco {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    margin-bottom: 32px;
+    padding-bottom: 32px;
+  }
+  .modulo-reverse { direction: ltr; }
+  /* Imagem em 16:9 — não ocupa muito espaço vertical */
+  .modulo-img {
+    aspect-ratio: 16/9;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(61,26,10,.14);
+  }
+  .modulo-img img { object-position: center 25%; }
+  .mod-num-badge { font-size: 10px; padding: 4px 10px; top: 10px; left: 10px; }
+  .modulo-content { gap: 7px; }
+  .mod-eyebrow { font-size: 10px; letter-spacing: .08em; }
+  .modulo-content h3 { font-size: 1.15rem; }
+  .modulo-content p { font-size: 13px; line-height: 1.55; }
+  .mod-list { gap: 5px; }
+  .mod-list li { font-size: 12.5px; gap: 7px; }
+  .mod-list li::before { width: 15px; height: 15px; font-size: 8px; }
+  .receitas-tags { gap: 5px; }
+  .rtag { font-size: 11px; padding: 4px 9px; }
+  .mod-note { font-size: 11.5px !important; padding: 6px 10px; }
+
+  /* ROI */
+  .roi-section { padding: 40px 14px; }
+  .roi-section .sec-header { margin-bottom: 24px; }
+  .roi-cards { flex-direction: column; gap: 0; }
+  .roi-card { padding: 14px 16px; border-radius: 10px; }
+  .roi-num { font-size: 1.7rem; }
+  .roi-lbl { font-size: 11px; }
+  .roi-arrow { transform: rotate(90deg); font-size: 1rem; padding: 4px 0; color: rgba(255,255,255,.2); }
+  .roi-badge { font-size: 12.5px; padding: 9px 16px; margin-bottom: 20px; border-radius: 8px; }
+  /* Cenários lado a lado no mobile */
+  .scenarios { grid-template-columns: 1fr 1fr 1fr; gap: 6px; margin-bottom: 24px; }
+  .scenario { padding: 12px 8px; border-radius: 10px; }
+  .sc-label { font-size: 9.5px; margin-bottom: 5px; }
+  .sc-bolos { font-size: 10.5px; }
+  .sc-value { font-size: 1.2rem; }
+  .sc-period { font-size: 10px; }
+
+  /* Comparativo */
+  .compare-section { padding: 40px 14px; }
+  .compare-table { border-radius: 10px; }
+  .compare-row { padding: 11px 14px; flex-wrap: wrap; gap: 6px; }
+  .compare-row .cr-name { font-size: 12.5px; flex: 1 1 100%; }
+  .compare-row .cr-price { font-size: 1.05rem; }
+  .compare-row .cr-badge { font-size: 9.5px; }
+  .analogies { gap: 7px; }
+  .analogy { min-width: 0; flex: 1 1 calc(50% - 4px); padding: 12px 10px; border-radius: 10px; }
+  .analogy .a-icon { font-size: 1.2rem; margin-bottom: 4px; }
+  .analogy .a-name { font-size: 11px; }
+  .analogy .a-price { font-size: 1rem; }
+  .analogy .a-vs { font-size: 9.5px; }
+
+  /* Depoimentos */
+  .test-grid { grid-template-columns: 1fr; gap: 10px; }
+  .test-card { padding: 16px; border-radius: 14px; }
+  .test-card::before { font-size: 4rem; top: 2px; left: 12px; }
+  .stars { font-size: 12px; margin-bottom: 8px; }
+  .test-text { font-size: 13px; line-height: 1.55; margin-bottom: 12px; padding-top: 4px; }
+  .test-author { gap: 9px; padding-top: 10px; }
+  .test-author img, .test-author .fallback { width: 36px; height: 36px; }
+  .test-info .tname { font-size: 12.5px; }
+  .test-info .tloc { font-size: 10.5px; }
+  .result-tag { font-size: 10px; padding: 3px 8px; }
+
+  /* Bônus — 2 colunas bem compactas */
+  .bonus-grid { grid-template-columns: 1fr 1fr; gap: 8px; }
+  .bonus-card { padding: 14px 10px; border-radius: 12px; }
+  .bonus-card::after { height: 2px; }
+  .bonus-icon { width: 44px; height: 52px; font-size: 1.2rem; margin-bottom: 8px; }
+  .bonus-card h4 { font-size: 12px; margin-bottom: 4px; }
+  .bonus-card p { font-size: 10.5px; margin-bottom: 8px; line-height: 1.4; }
+  .bonus-val { font-size: 10.5px; }
+  .bonus-free { font-size: 11.5px; }
+
+  /* Oferta / Preço */
+  .offer-section { padding: 40px 14px; }
+  .offer-box { padding: 24px 16px; border-radius: 16px; }
+  .offer-pill { font-size: 10px; padding: 4px 12px; margin-bottom: 14px; }
+  .offer-box h2 { font-size: 1.35rem; margin-bottom: 4px; }
+  .offer-box .osub { font-size: 12px; margin-bottom: 18px; }
+  .timer-row { padding: 10px 12px; gap: 6px; border-radius: 10px; margin-bottom: 18px; }
+  .timer-lbl { font-size: 11px; width: 100%; text-align: center; }
+  .tdigits { justify-content: center; }
+  .t-u { min-width: 42px; padding: 7px 10px; border-radius: 7px; }
+  .t-n { font-size: 1.5rem; }
+  .t-l { font-size: 8px; }
+  .t-sep { font-size: 1.2rem; }
+  .price-from { font-size: .85rem; }
+  .price-now { font-size: 2.8rem; }
+  .price-now sup { font-size: 1.4rem; }
+  .price-note { font-size: 11px; margin-bottom: 18px; }
+  .offer-list { gap: 7px; margin-bottom: 20px; }
+  .offer-list li { font-size: 12px; gap: 8px; }
+  .chk { width: 18px; height: 18px; font-size: 9px; }
+  .btn.full { font-size: .95rem; padding: 15px 20px; border-radius: 50px; }
+  .guar-row { flex-direction: column; align-items: flex-start; padding: 14px; gap: 8px; border-radius: 10px; }
+  .guar-icon { font-size: 1.8rem; }
+  .guar-text h4 { font-size: 12.5px; }
+  .guar-text p { font-size: 11.5px; }
+
+  /* FAQ */
+  .faq-list { gap: 1px; }
+  .faq-item { border-radius: 10px; }
+  .faq-q { font-size: 13px; padding: 13px 14px; gap: 10px; line-height: 1.4; }
+  .faq-q .arr { width: 20px; height: 20px; font-size: 11px; }
+  .faq-a { font-size: 12.5px; line-height: 1.6; }
+  .faq-item.open .faq-a { padding: 0 14px 14px; }
+
+  /* Final CTA */
+  .final-sec { padding: 48px 14px; }
+  .final-sec h2 { font-size: 1.6rem; line-height: 1.15; margin-bottom: 12px; }
+  .final-sec p { font-size: 13.5px; margin-bottom: 28px; }
+
+  /* Sticky bar */
+  .sticky-bar { display: block; padding: 10px 14px; }
+  .sticky-bar .btn { font-size: .9rem; padding: 14px 20px; }
+  body { padding-bottom: 62px; }
+
+  /* Footer */
+  footer { padding: 22px 14px; font-size: 11.5px; }
+}
+
+/* ── Telas muito pequenas (até 375px — iPhone SE, Galaxy A) ── */
+@media (max-width: 375px) {
+  .hero h1 { font-size: 1.65rem; }
+  .bolo-grid { gap: 5px; }
+  .card-lbl { font-size: 10px; }
+  .scenarios { grid-template-columns: 1fr; gap: 6px; }
+  .sc-value { font-size: 1.4rem; }
+  .bonus-grid { grid-template-columns: 1fr; }
+  .analogy { flex: 1 1 100%; }
+  .price-now { font-size: 2.4rem; }
+  .offer-list li { font-size: 11.5px; }
+}
+
+/* ── Tablet (641px–1024px) ── */
+@media (min-width: 641px) and (max-width: 1024px) {
+  .modulo-bloco { gap: 28px; margin-bottom: 44px; padding-bottom: 44px; }
+  .pain-wrap { gap: 20px; }
+  .test-grid { grid-template-columns: 1fr 1fr; }
+  .scenarios { grid-template-columns: repeat(3, 1fr); }
+  .bolo-grid { grid-template-columns: repeat(3, 1fr); }
+}
+</style>
+</head>
+<body>
+
+<!-- TOPBAR -->
+<div class="topbar">
+  🍰 Oferta especial ativa · <em>Acesso imediato</em> · Garantia de 7 dias sem risco
+</div>
+
+<!-- ══════════ HERO ══════════ -->
+<section class="hero">
+  <div class="hero-bg-circles">
+    <span></span><span></span><span></span>
+  </div>
+  <div class="hero-inner">
+    <div class="hero-pill">🍰 Curso de Bolos Caseiros Lucrativos</div>
+    <h1>Fature <em>R$1.000+</em> por mês<br>fazendo bolos na<br>sua própria cozinha</h1>
+    <p class="hero-sub">Receitas campeãs de venda, do zero à primeira encomenda — sem forno industrial, sem curso caro, sem sair de casa.</p>
+    <div class="hero-count">
+      Mais de <strong>2.000 mulheres</strong> já aprenderam e estão faturando
+    </div>
+    <div class="hero-badges">
+      <span class="hbadge">🍫 20+ receitas que vendem</span>
+      <span class="hbadge">🌾 Inclui receitas sem glúten</span>
+      <span class="hbadge">📖 Livro de receitas incluso</span>
+      <span class="hbadge">🎓 Certificado incluso</span>
+    </div>
+
+    <div class="video-outer">
+      <div class="video-frame">
+        <iframe
+          src="https://www.youtube.com/embed/wLfoOgJr1tw?start=6&rel=0&modestbranding=1"
+          title="Bolos Caseiros Lucrativos — Vídeo de Vendas"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+
+    <a href="https://lastlink.com/p/C6B86D194/checkout-payment" target="_blank" rel="noopener" class="btn btn-caramel lg">
+      👉 QUERO COMEÇAR POR APENAS R$47
+    </a>
+    <div class="trust-row">
+      <span>🔒 Pagamento seguro</span>
+      <span>⚡ Acesso imediato</span>
+      <span>🛡️ Garantia 7 dias</span>
+      <span>🎓 Certificado incluso</span>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ ANTES E DEPOIS ══════════ -->
+<section class="section s-white reveal">
+  <div class="container">
+    <div class="sec-header">
+      <div class="sec-tag">Sua realidade hoje vs daqui a 30 dias</div>
+      <h2>O que muda quando você decide começar</h2>
+    </div>
+    <div class="pain-wrap">
+      <div>
+        <p class="pain-col-lbl bad">✗ Sem o curso</p>
+        <ul class="pain-rows">
+          <li><span class="pi bad">✗</span>Renda parada, contas acumulando todo mês</li>
+          <li><span class="pi bad">✗</span>Dependendo de salário que não cresce</li>
+          <li><span class="pi bad">✗</span>Sem tempo ou capital para montar um negócio</li>
+          <li><span class="pi bad">✗</span>Vendo outras pessoas faturarem com confeitaria</li>
+          <li><span class="pi bad">✗</span>Com vontade de empreender mas sem saber por onde começar</li>
+          <li><span class="pi bad">✗</span>Gastando dinheiro em bolos que poderia estar ganhando</li>
+        </ul>
+      </div>
+      <div>
+        <p class="pain-col-lbl ok">✓ Com o curso</p>
+        <ul class="pain-rows">
+          <li><span class="pi ok">✓</span>Encomendas chegando pelo WhatsApp toda semana</li>
+          <li><span class="pi ok">✓</span>Renda extra real que você controla</li>
+          <li><span class="pi ok">✓</span>Negócio que começa com R$30 na sua cozinha</li>
+          <li><span class="pi ok">✓</span>Você faz, vende e recebe — sem patrão</li>
+          <li><span class="pi ok">✓</span>Receitas prontas que já provaram que vendem</li>
+          <li><span class="pi ok">✓</span>Certificada e com negócio próprio funcionando</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ GALERIA DE BOLOS ══════════ -->
+<section class="section s-vanilla reveal">
+  <div class="container">
+    <div class="sec-header">
+      <div class="sec-tag">O que você vai aprender a fazer</div>
+      <h2>Bolos que encantam, fotografam bem e vendem sozinhos</h2>
+      <p>Cada receita foi escolhida por ter alta demanda e alta margem de lucro</p>
+    </div>
+    <div class="bolo-grid">
+      <div class="bolo-card">
+        <img loading="lazy" src="https://images.pexels.com/photos/2267868/pexels-photo-2267868.jpeg?auto=compress&cs=tinysrgb&w=700&h=525&fit=crop" alt="Bolo de Chocolate" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+        <div class="card-lbl">Bolo de Chocolate</div>
+      </div>
+      <div class="bolo-card">
+        <img loading="lazy" src="https://images.pexels.com/photos/4551125/pexels-photo-4551125.jpeg?auto=compress&cs=tinysrgb&w=700&h=525&fit=crop" alt="Bolo de Leite Ninho" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+        <div class="card-lbl">Bolo de Leite Ninho</div>
+      </div>
+      <div class="bolo-card">
+        <img loading="lazy" src="https://images.pexels.com/photos/2612373/pexels-photo-2612373.jpeg?auto=compress&cs=tinysrgb&w=700&h=525&fit=crop" alt="Bolo de Cenoura" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+        <div class="card-lbl">Bolo de Cenoura</div>
+      </div>
+      <div class="bolo-card">
+        <img loading="lazy" src="https://images.pexels.com/photos/1414230/pexels-photo-1414230.jpeg?auto=compress&cs=tinysrgb&w=700&h=525&fit=crop" alt="Bolo de Baunilha" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+        <div class="card-lbl">Bolo de Baunilha</div>
+      </div>
+      <div class="bolo-card">
+        <img loading="lazy" src="https://images.pexels.com/photos/7451860/pexels-photo-7451860.jpeg?auto=compress&cs=tinysrgb&w=700&h=525&fit=crop" alt="Bolo de Banana" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+        <div class="card-lbl">Bolo de Banana</div>
+      </div>
+      <div class="bolo-card">
+        <img loading="lazy" src="https://images.pexels.com/photos/3913295/pexels-photo-3913295.jpeg?auto=compress&cs=tinysrgb&w=700&h=525&fit=crop" alt="Bolo Napolitano" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+        <div class="card-lbl">Bolo Napolitano</div>
+      </div>
+    </div>
+    <p style="text-align:center;color:var(--muted);font-size:13px;margin-top:20px;">Apenas alguns dos <strong style="color:var(--brown)">20+ sabores</strong> que você vai dominar — do clássico ao sofisticado</p>
+  </div>
+</section>
+
+<!-- ══════════ CONTEÚDO DO CURSO ══════════ -->
+<section class="section s-white reveal">
+  <div class="container">
+    <div class="sec-header">
+      <div class="sec-tag">Conteúdo completo do curso</div>
+      <h2>20+ receitas que você vai dominar — do mais simples ao irresistível</h2>
+      <p>Cada módulo foi estruturado para você sair da aula e ir direto para a cozinha. Sem teoria inútil — só o que funciona e vende.</p>
+    </div>
+
+    <!-- MÓDULO 1 -->
+    <div class="modulo-bloco reveal">
+      <div class="modulo-img">
+        <img loading="lazy" src="https://images.pexels.com/photos/3184183/pexels-photo-3184183.jpeg?auto=compress&cs=tinysrgb&w=700&h=480&fit=crop" alt="Materiais e utensílios para confeitaria">
+        <div class="mod-num-badge">Módulo 1</div>
+      </div>
+      <div class="modulo-content">
+        <div class="mod-eyebrow">A base de tudo</div>
+        <h3>Materiais e Utensílios</h3>
+        <p>Saiba exatamente <strong>o que comprar — e o que não precisa</strong> — para começar a produzir sem desperdício e sem erro.</p>
+        <ul class="mod-list">
+          <li>Kit essencial para iniciar a produção agora</li>
+          <li>Onde comprar mais barato sem perder qualidade</li>
+          <li>Como organizar sua bancada para produzir com eficiência</li>
+          <li>Substituições inteligentes com o que você já tem em casa</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- MÓDULO 2 -->
+    <div class="modulo-bloco modulo-reverse reveal">
+      <div class="modulo-img">
+        <img loading="lazy" src="https://images.pexels.com/photos/3992206/pexels-photo-3992206.jpeg?auto=compress&cs=tinysrgb&w=700&h=480&fit=crop&crop=top" alt="Mulher fazendo bolo em cozinha caseira">
+        <div class="mod-num-badge">Módulo 2</div>
+      </div>
+      <div class="modulo-content">
+        <div class="mod-eyebrow">O segredo que multiplica tudo</div>
+        <h3>A Receita Base Perfeita</h3>
+        <p>O <strong>alicerce do seu sucesso</strong>. Uma fórmula que se adapta a todos os sabores — massa sempre macia, úmida e consistente em qualquer forno doméstico.</p>
+        <ul class="mod-list">
+          <li>Proporção exata que garante resultado toda vez</li>
+          <li>Por que os bolos murcham — e como eliminar esse problema</li>
+          <li>Como adaptar esta base para 20+ sabores diferentes</li>
+          <li>Os pontos certos de mistura, descanso e forno</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- MÓDULO 3 -->
+    <div class="modulo-bloco reveal">
+      <div class="modulo-img">
+        <img loading="lazy" src="https://images.pexels.com/photos/2267868/pexels-photo-2267868.jpeg?auto=compress&cs=tinysrgb&w=700&h=480&fit=crop" alt="Bolos clássicos que mais vendem">
+        <div class="mod-num-badge">Módulo 3</div>
+      </div>
+      <div class="modulo-content">
+        <div class="mod-eyebrow">Os clássicos que nunca param de vender</div>
+        <h3>Receitas Parte 1 — Os Queridinhos do Brasil</h3>
+        <p>Os sabores mais pedidos toda semana — você vai dominá-los com confiança e nunca mais perder uma encomenda.</p>
+        <div class="receitas-tags">
+          <span class="rtag">🥜 Amendoim</span>
+          <span class="rtag">🍫 Chocolate</span>
+          <span class="rtag">🥛 Leite Ninho</span>
+          <span class="rtag">🍦 Baunilha</span>
+          <span class="rtag">🍬 Brigadeiro</span>
+          <span class="rtag">🌽 Fubá</span>
+        </div>
+        <p class="mod-note">Cobertura ideal, tempo de forno e dica de apresentação para cada receita.</p>
+      </div>
+    </div>
+
+    <!-- MÓDULO 4 -->
+    <div class="modulo-bloco modulo-reverse reveal">
+      <div class="modulo-img">
+        <img loading="lazy" src="https://images.pexels.com/photos/15526782/pexels-photo-15526782.jpeg?auto=compress&cs=tinysrgb&w=700&h=480&fit=crop" alt="Bolos de frutas cítricas e especiais">
+        <div class="mod-num-badge">Módulo 4</div>
+      </div>
+      <div class="modulo-content">
+        <div class="mod-eyebrow">Frescor, sofisticação e ticket mais alto</div>
+        <h3>Receitas Parte 2 — Sabores que Diferenciam</h3>
+        <p>Bolos que <strong>surpreendem</strong> e rendem os pedidos mais especiais — e os preços mais altos. Aqui você sai na frente da concorrência.</p>
+        <div class="receitas-tags">
+          <span class="rtag">🍊 Laranja</span>
+          <span class="rtag">🍋 Limão</span>
+          <span class="rtag">🌺 Maracujá</span>
+          <span class="rtag">🥜 Ninho com Nutella</span>
+          <span class="rtag">🎨 Mesclado</span>
+          <span class="rtag">🍦 Napolitano</span>
+        </div>
+        <p class="mod-note">Caldas, recheio duplo e montagem em camadas para resultado visual de confeitaria premium.</p>
+      </div>
+    </div>
+
+    <!-- MÓDULO 5 -->
+    <div class="modulo-bloco reveal">
+      <div class="modulo-img">
+        <img loading="lazy" src="https://images.pexels.com/photos/7451860/pexels-photo-7451860.jpeg?auto=compress&cs=tinysrgb&w=700&h=480&fit=crop" alt="Bolos especiais e diferenciados">
+        <div class="mod-num-badge">Módulo 5</div>
+      </div>
+      <div class="modulo-content">
+        <div class="mod-eyebrow">O cardápio que fideliza para sempre</div>
+        <h3>Receitas Parte 3 — Variedade que Enche Agenda</h3>
+        <p>Com este módulo você terá um cardápio tão completo que sua cliente <strong>nunca vai precisar ir em outro lugar</strong>. Sabores para todo mês do ano.</p>
+        <div class="receitas-tags">
+          <span class="rtag">🍌 Banana</span>
+          <span class="rtag">☕ Capuccino</span>
+          <span class="rtag">🌰 Castanha</span>
+          <span class="rtag">🥕 Cenoura</span>
+          <span class="rtag">🍩 Churros</span>
+          <span class="rtag">🥥 Coco</span>
+          <span class="rtag">💗 Goiabada</span>
+          <span class="rtag">🍋 Limão com Calda</span>
+          <span class="rtag">🍎 Maçã</span>
+        </div>
+        <p class="mod-note">9 receitas — cada uma com versão para venda unitária, por fatia ou em kit presente.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════ ROI ══════════ -->
+<section class="roi-section reveal">
+  <div class="container">
+    <div class="sec-header">
+      <div class="sec-tag" style="color:#FFD898;">Cálculo real de retorno</div>
+      <h2>Quanto você pode ganhar com bolos caseiros?</h2>
+      <p>Sem exageros — veja os números reais baseados em alunas que já estão faturando</p>
+    </div>
+
+    <div class="roi-cards">
+      <div class="roi-card">
+        <div class="roi-num">R$30</div>
+        <div class="roi-lbl">Custo médio de ingredientes por bolo médio</div>
+      </div>
+      <div class="roi-arrow">→</div>
+      <div class="roi-card">
+        <div class="roi-num">R$65</div>
+        <div class="roi-lbl">Preço médio de venda por bolo médio</div>
+      </div>
+      <div class="roi-arrow">→</div>
+      <div class="roi-card">
+        <div class="roi-num">R$35</div>
+        <div class="roi-lbl">Lucro médio por bolo vendido</div>
+      </div>
+    </div>
+
+    <div class="roi-badge">🍰 Com apenas 2 bolos por semana você já paga o curso!</div>
+
+    <div class="scenarios">
+      <div class="scenario">
+        <div class="sc-label c1">Conservador</div>
+        <div class="sc-bolos">5 bolos por semana</div>
+        <div class="sc-value">R$700</div>
+        <div class="sc-period">por mês</div>
+      </div>
+      <div class="scenario">
+        <div class="sc-label c2">Moderado</div>
+        <div class="sc-bolos">10 bolos por semana</div>
+        <div class="sc-value">R$1.400</div>
+        <div class="sc-period">por mês</div>
+      </div>
+      <div class="scenario">
+        <div class="sc-label c3">Dedicada</div>
+        <div class="sc-bolos">20 bolos por semana</div>
+        <div class="sc-value">R$2.800</div>
+        <div class="sc-period">por mês</div>
+      </div>
+    </div>
+
+    <p style="text-align:center;color:rgba(255,255,255,.4);font-size:12px;margin-bottom:32px;">* Resultados variam conforme dedicação e região. Cálculo baseado em bolo médio de 25cm.</p>
+    <div style="text-align:center;">
+      <a href="https://lastlink.com/p/C6B86D194/checkout-payment" target="_blank" rel="noopener" class="btn btn-caramel">
+        🔥 QUERO COMEÇAR POR R$47
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ COMPARATIVO DE PREÇO ══════════ -->
+<section class="compare-section reveal">
+  <div class="container">
+    <div class="sec-header">
+      <div class="sec-tag">Por que R$47 é um investimento irresistível</div>
+      <h2>Veja o que você economiza escolhendo este curso</h2>
+    </div>
+
+    <div class="compare-table">
+      <div class="compare-row">
+        <span class="cr-name">Curso presencial de confeitaria</span>
+        <span class="cr-price">R$800–2.000</span>
+      </div>
+      <div class="compare-row">
+        <span class="cr-name">Cursos online de confeitaria (plataformas grandes)</span>
+        <span class="cr-price">R$200–500</span>
+      </div>
+      <div class="compare-row">
+        <span class="cr-name">Apostilas e e-books de receitas</span>
+        <span class="cr-price">R$80–200</span>
+      </div>
+      <div class="compare-row highlight">
+        <span class="cr-name"><strong>Bolos Caseiros Lucrativos — curso completo</strong></span>
+        <span class="cr-price">R$47</span>
+        <span class="cr-badge">Sua escolha</span>
+      </div>
+    </div>
+
+    <div style="text-align:center;margin-bottom:28px;">
+      <p style="color:var(--muted);font-size:14px;">R$47 é menos do que…</p>
+    </div>
+    <div class="analogies">
+      <div class="analogy">
+        <span class="a-icon">🍕</span>
+        <div class="a-name">Uma pizza no delivery</div>
+        <div class="a-price">R$55–90</div>
+        <div class="a-vs">que você come em 30 min</div>
+      </div>
+      <div class="analogy">
+        <span class="a-icon">🛒</span>
+        <div class="a-name">Uma ida ao mercado</div>
+        <div class="a-price">R$60–150</div>
+        <div class="a-vs">que acaba em dias</div>
+      </div>
+      <div class="analogy">
+        <span class="a-icon">💅</span>
+        <div class="a-name">Uma sessão de nail art</div>
+        <div class="a-price">R$60–120</div>
+        <div class="a-vs">que dura 3 semanas</div>
+      </div>
+      <div class="analogy">
+        <span class="a-icon">🎬</span>
+        <div class="a-name">Streaming + cinema</div>
+        <div class="a-price">R$50–80</div>
+        <div class="a-vs">só para entretenimento</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ DEPOIMENTOS ══════════ -->
+<section class="section s-cream reveal">
+  <div class="container">
+    <div class="sec-header">
+      <div class="sec-tag">Quem já fez e está faturando</div>
+      <h2>Resultados reais de quem começou do zero</h2>
+      <p>Mulheres comuns, sem experiência prévia, que decidiram começar</p>
+    </div>
+    <div class="test-grid">
+
+      <div class="test-card">
+        <div class="stars">★★★★★</div>
+        <p class="test-text">Nunca tinha feito um bolo pra vender na minha vida. Na primeira semana já fiz 4 bolos de cenoura pro pessoal da minha rua pelo WhatsApp. Faturei R$280 sem sair de casa. O módulo de precificação abriu meu olho — eu estava cobrando barato!</p>
+        <div class="test-author">
+          <img loading="lazy" src="https://randomuser.me/api/portraits/women/44.jpg" alt="Rosangela P." style="width:42px;height:42px;border-radius:50%;object-fit:cover;flex-shrink:0;border:2px solid var(--caramel-lt);"
+            onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="fallback" style="background:linear-gradient(135deg,#C8763A,#7C3A1E);">R</div>
+          <div class="test-info">
+            <div class="tname">Rosangela P.</div>
+            <div class="tloc">Campinas, SP</div>
+          </div>
+          <div class="result-tag">+R$280 semana 1</div>
+        </div>
+      </div>
+
+      <div class="test-card">
+        <div class="stars">★★★★★</div>
+        <p class="test-text">Estava desempregada e precisava de uma renda rápida. Investi R$47 no curso e R$30 de ingredientes. Na primeira semana já vendi 6 bolos de leite Ninho pelo Instagram. No terceiro mês já tava fazendo R$900 por mês.</p>
+        <div class="test-author">
+          <img loading="lazy" src="https://randomuser.me/api/portraits/women/68.jpg" alt="Tatiane M." style="width:42px;height:42px;border-radius:50%;object-fit:cover;flex-shrink:0;border:2px solid var(--caramel-lt);"
+            onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="fallback" style="background:linear-gradient(135deg,#A05530,#5A2800);">T</div>
+          <div class="test-info">
+            <div class="tname">Tatiane M.</div>
+            <div class="tloc">Fortaleza, CE</div>
+          </div>
+          <div class="result-tag">R$900/mês</div>
+        </div>
+      </div>
+
+      <div class="test-card">
+        <div class="stars">★★★★★</div>
+        <p class="test-text">Sou mãe de 3 filhos e não consigo trabalhar fora. Com o curso aprendi a fazer bolos no pote que vendo a R$12 cada — consigo fazer 20 por dia nos intervalos. Em uma semana faturei R$540 sem sair da minha cozinha.</p>
+        <div class="test-author">
+          <img loading="lazy" src="https://randomuser.me/api/portraits/women/26.jpg" alt="Simone A." style="width:42px;height:42px;border-radius:50%;object-fit:cover;flex-shrink:0;border:2px solid var(--caramel-lt);"
+            onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="fallback" style="background:linear-gradient(135deg,#688040,#3A5020);">S</div>
+          <div class="test-info">
+            <div class="tname">Simone A.</div>
+            <div class="tloc">Belém, PA</div>
+          </div>
+          <div class="result-tag">R$540/semana</div>
+        </div>
+      </div>
+
+      <div class="test-card">
+        <div class="stars">★★★★★</div>
+        <p class="test-text">Já fazia bolo, mas sem método. Depois do curso entendi que estava cobrando errado e que minhas embalagens afastavam clientes. Mudei tudo, refiz meu Instagram e hoje tenho lista de espera de 2 semanas toda vez que posto.</p>
+        <div class="test-author">
+          <img loading="lazy" src="https://randomuser.me/api/portraits/women/57.jpg" alt="Cláudia R." style="width:42px;height:42px;border-radius:50%;object-fit:cover;flex-shrink:0;border:2px solid var(--caramel-lt);"
+            onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="fallback" style="background:linear-gradient(135deg,#C8963A,#906020);">C</div>
+          <div class="test-info">
+            <div class="tname">Cláudia R.</div>
+            <div class="tloc">Goiânia, GO</div>
+          </div>
+          <div class="result-tag">Lista de espera</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ BÔNUS ══════════ -->
+<section class="section s-white reveal">
+  <div class="container">
+    <div class="sec-header">
+      <div class="sec-tag">Exclusivo para quem entrar hoje</div>
+      <h2>4 bônus estratégicos — totalmente gratuitos</h2>
+    </div>
+    <div class="bonus-grid">
+      <div class="bonus-card">
+        <div class="bonus-icon">📊</div>
+        <h4>Planilha de Precificação</h4>
+        <p>Insira o custo dos ingredientes e descubra o preço ideal para lucrar sem perder cliente. Simples, direto, funcional.</p>
+        <div class="bonus-val">Valor: R$27,00</div>
+        <div class="bonus-free">Grátis para você</div>
+      </div>
+      <div class="bonus-card">
+        <div class="bonus-icon">📦</div>
+        <h4>Guia de Embalagens que Encantam</h4>
+        <p>Onde comprar embalagens baratas que parecem caras. Fornecedores, fotos e dicas de montagem para impressionar.</p>
+        <div class="bonus-val">Valor: R$19,00</div>
+        <div class="bonus-free">Grátis para você</div>
+      </div>
+      <div class="bonus-card">
+        <div class="bonus-icon">📖</div>
+        <h4>Livro de Receitas Exclusivo</h4>
+        <p>Um livro completo com todas as receitas do curso em formato visual, organizado por módulo — ideal para consultar rapidinho na cozinha sem precisar abrir o vídeo.</p>
+        <div class="bonus-val">Valor: R$37,00</div>
+        <div class="bonus-free">Grátis para você</div>
+      </div>
+      <div class="bonus-card">
+        <div class="bonus-icon">🌾</div>
+        <h4>Receitas Especiais Sem Glúten</h4>
+        <p>Um mercado em crescimento acelerado: bolos sem glúten para clientes com restrição alimentar. Amplie seu cardápio e atenda um público que paga mais por ter opções. Receitas deliciosas que ninguém vai saber que são sem glúten.</p>
+        <div class="bonus-val">Valor: R$47,00</div>
+        <div class="bonus-free">Grátis para você</div>
+      </div>
+    </div>
+    <p style="text-align:center;color:var(--muted);font-size:13px;">Valor total dos bônus: <strong style="color:var(--text)">R$130,00</strong> — incluídos gratuitamente</p>
+  </div>
+</section>
+
+<!-- ══════════ OFERTA + PREÇO ══════════ -->
+<section class="offer-section reveal" id="oferta">
+  <div class="container">
+    <div class="offer-box">
+      <div class="offer-pill">🍰 Oferta especial por tempo limitado</div>
+      <h2>Curso Completo + 4 Bônus</h2>
+      <p class="osub">Acesso vitalício · 6 módulos em vídeo · Certificado incluso</p>
+
+      <div class="timer-row">
+        <span class="timer-lbl">⏳ Desconto encerra em:</span>
+        <div class="tdigits">
+          <div class="t-u"><span class="t-n" id="t-h">23</span><span class="t-l">horas</span></div>
+          <span class="t-sep">:</span>
+          <div class="t-u"><span class="t-n" id="t-m">59</span><span class="t-l">min</span></div>
+          <span class="t-sep">:</span>
+          <div class="t-u"><span class="t-n" id="t-s">47</span><span class="t-l">seg</span></div>
+        </div>
+      </div>
+
+      <div class="price-from">De R$197,00</div>
+      <div class="price-now"><sup>R$</sup>47<span style="font-size:2.4rem">,00</span></div>
+      <div class="price-note">💳 Pagamento único · Cartão, Pix ou boleto</div>
+
+      <ul class="offer-list">
+        <li><span class="chk">✓</span>Curso completo com 5 módulos em vídeo (acesso vitalício)</li>
+        <li><span class="chk">✓</span>Módulo 1: Materiais e utensílios — o kit ideal para começar</li>
+        <li><span class="chk">✓</span>Módulo 2: A receita base perfeita — alicerce de todas as receitas</li>
+        <li><span class="chk">✓</span>Módulo 3: 6 receitas clássicas (Amendoim, Chocolate, Ninho, Baunilha, Brigadeiro, Fubá)</li>
+        <li><span class="chk">✓</span>Módulo 4: 6 sabores premium (Laranja, Limão, Maracujá, Ninho c/ Nutella, Mesclado, Napolitano)</li>
+        <li><span class="chk">✓</span>Módulo 5: 9 receitas especiais (Banana, Capuccino, Castanha, Cenoura, Churros, Coco, Goiabada, Limão c/ Calda, Maçã)</li>
+        <li><span class="chk">✓</span>Bônus: Planilha de Precificação (R$27 grátis)</li>
+        <li><span class="chk">✓</span>Bônus: Guia de Embalagens que Encantam (R$19 grátis)</li>
+        <li><span class="chk">✓</span>Bônus: Livro de Receitas Exclusivo (R$37 grátis)</li>
+        <li><span class="chk">✓</span>Bônus: Receitas Especiais Sem Glúten (R$47 grátis)</li>
+        <li><span class="chk">✓</span>Certificado digital de conclusão</li>
+        <li><span class="chk">✓</span>Suporte por e-mail incluído</li>
+      </ul>
+
+      <a href="https://lastlink.com/p/C6B86D194/checkout-payment" target="_blank" rel="noopener" class="btn btn-caramel lg full">
+        🔥 GARANTIR MEU ACESSO AGORA
+      </a>
+
+      <div class="guar-row">
+        <div class="guar-icon">🛡️</div>
+        <div class="guar-text">
+          <h4>Garantia Incondicional de 7 Dias</h4>
+          <p>Acesse o curso, assista todas as aulas, pratique as receitas. Se por qualquer motivo não gostar — devolvemos 100% do valor. Sem perguntas, sem burocracia.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ FAQ ══════════ -->
+<section class="section s-cream reveal">
+  <div class="container">
+    <div class="sec-header">
+      <div class="sec-tag">Tirando suas dúvidas</div>
+      <h2>Perguntas frequentes</h2>
+    </div>
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <button class="faq-q">Preciso de forno industrial ou equipamentos especiais?<span class="arr">▾</span></button>
+        <div class="faq-a">Não. O curso foi desenvolvido para funcionar com o forno doméstico que você já tem em casa. Você vai aprender a usar o equipamento que já possui para ter resultado profissional — sem precisar investir em nada caro antes de começar a faturar.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">Funciona em apartamento ou cozinha pequena?<span class="arr">▾</span></button>
+        <div class="faq-a">Perfeitamente. A maioria das alunas atendem em apartamentos. O curso ensina como organizar a produção em espaços pequenos, sem bagunça e com higiene profissional. O bolo no pote, por exemplo, é ideal para quem tem pouco espaço e quer alto volume de vendas.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">Como faço as entregas? Preciso de carro?<span class="arr">▾</span></button>
+        <div class="faq-a">Não precisa. O curso ensina como empacotar os bolos para retirada na sua casa (a maioria das alunas usa esse modelo) e também como fazer parcerias com motoboys para entrega sem precisar de carro próprio. Muitas alunas começam só com retirada e expandem depois.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">Posso vender bolos sem CNPJ ou alvará?<span class="arr">▾</span></button>
+        <div class="faq-a">Sim, você pode começar de forma informal vendendo para conhecidos, pelo WhatsApp e Instagram. Quando o negócio crescer, o ideal é se formalizar como MEI — o Módulo 6 aborda exatamente isso, inclusive como emitir nota fiscal de confeitaria caseira.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">Quanto tempo duram os bolos? Como embalar para manter fresco?<span class="arr">▾</span></button>
+        <div class="faq-a">Depende da receita, mas em geral os bolos cobertos duram 3 a 5 dias em temperatura ambiente e até 10 dias na geladeira. O curso tem um módulo específico sobre conservação, validade e embalagem correta para cada tipo de bolo.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">Em quanto tempo recebo o acesso após a compra?<span class="arr">▾</span></button>
+        <div class="faq-a">O acesso é imediato no Pix e no cartão de crédito. No boleto bancário pode levar até 3 dias úteis para a compensação. Após confirmação, você recebe o link de acesso no e-mail cadastrado.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">Já sei fazer bolo. Este curso é para mim?<span class="arr">▾</span></button>
+        <div class="faq-a">Sim! Se você já sabe fazer bolo mas não está transformando isso em renda, este curso é exatamente o que falta. Os módulos de precificação, embalagem, fotografia e vendas pelo WhatsApp/Instagram são os mais valorizados por quem já sabe cozinhar mas não sabe vender.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">E se eu não gostar do curso?<span class="arr">▾</span></button>
+        <div class="faq-a">Você tem 7 dias corridos após a compra para pedir reembolso total, sem precisar dar nenhuma explicação. É só enviar um e-mail para o suporte e devolvemos 100% do valor. A garantia é real, incondicional e sem burocracia.</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ FINAL CTA ══════════ -->
+<section class="final-sec reveal">
+  <div class="container" style="position:relative;z-index:1;">
+    <h2>Sua cozinha pode ser<br><em>o seu negócio mais lucrativo</em></h2>
+    <p>Mais de 2.000 mulheres já tomaram essa decisão com R$47. Algumas com medo, sem experiência, sem certeza. Hoje têm agenda cheia e renda própria.</p>
+    <a href="https://lastlink.com/p/C6B86D194/checkout-payment" target="_blank" rel="noopener" class="btn btn-caramel lg">
+      🍰 QUERO COMEÇAR POR APENAS R$47
+    </a>
+    <div class="trust-row" style="margin-top:16px;">
+      <span style="color:rgba(255,255,255,.4);font-size:12px;">🔒 Pagamento seguro</span>
+      <span style="color:rgba(255,255,255,.4);font-size:12px;">⚡ Acesso imediato</span>
+      <span style="color:rgba(255,255,255,.4);font-size:12px;">🛡️ 7 dias de garantia</span>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Bolos Caseiros Lucrativos. Todos os direitos reservados.</p>
+  <p>Os resultados podem variar de pessoa para pessoa. Produto comercializado com garantia de satisfação de 7 dias conforme o Código de Defesa do Consumidor.</p>
+</footer>
+
+<!-- STICKY MOBILE -->
+<div class="sticky-bar">
+  <a href="https://lastlink.com/p/C6B86D194/checkout-payment" target="_blank" rel="noopener" class="btn btn-caramel">
+    🔥 GARANTIR ACESSO — R$47
+  </a>
+</div>
+
+<script>
+// ── TIMER 24h real por visitante
+(function(){
+  const key = 'bolos_exp';
+  let exp = localStorage.getItem(key);
+  if(!exp){ exp = Date.now() + 24*60*60*1000; localStorage.setItem(key,exp); }
+  exp = parseInt(exp);
+  function tick(){
+    const d = exp - Date.now();
+    if(d <= 0){
+      ['t-h','t-m','t-s'].forEach(id=>document.getElementById(id).textContent='00');
+      return;
+    }
+    document.getElementById('t-h').textContent = String(Math.floor(d/3600000)).padStart(2,'0');
+    document.getElementById('t-m').textContent = String(Math.floor((d%3600000)/60000)).padStart(2,'0');
+    document.getElementById('t-s').textContent = String(Math.floor((d%60000)/1000)).padStart(2,'0');
+  }
+  tick(); setInterval(tick,1000);
+})();
+
+// ── FAQ ACCORDION
+document.querySelectorAll('.faq-q').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    const item = btn.parentElement;
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i=>i.classList.remove('open'));
+    if(!isOpen) item.classList.add('open');
+  });
+});
+
+// ── SCROLL REVEAL
+const obs = new IntersectionObserver(entries=>{
+  entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('visible'); obs.unobserve(e.target); }});
+},{threshold:.1});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+</script>
+</body>
+</html>
